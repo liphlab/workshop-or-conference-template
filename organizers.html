@@ -1,0 +1,59 @@
+---
+title: Organizers and contacts
+description: Organizers and contacts.
+image: /images/ponte_consafelzi.jpg
+---
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable">Organizers and contacts</h1>
+		</div>
+	</div>
+</section>
+
+<section class="pad">
+	<div class="container">
+		<p class="editor-link"><a href="cloudcannon:collections/_organizers" class="btn"><strong>&#9998;</strong> Manage Staff Members</a></p>
+		<ul class="staff">
+			{% for person in site.organizers %}
+				<li>
+					<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+					<div class="name">{{ person.name }}</div>
+					<div class="position">{{ person.position }}</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+
+<div class="content">
+	<section class="info" id="learn-more">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Contacts</h2>
+				<p>For any further question please write to <a href="mailto:quantumsystems.unipd@gmail.com">quantumsystems.unipd@gmail.com</a> or contact one of the organizers.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="content">
+		<section class="info" id="learn-more">
+			<div class="container flex">
+				<div class="text">
+					<h2 class="editable">Sponsors</h2>
+					<img src="/images/infn_pd_logo.png" alt="INFN - Sezione di Padova" width="200">
+					&nbsp; &nbsp; &nbsp; &nbsp;
+					<img src="/images/logo_dfa.png" alt="Department of Physics and Astronomy ``Galileo Galilei'' - University of Padua" width="400">
+					&nbsp; &nbsp; &nbsp; &nbsp;
+					<img src="/images/sigilloUnipd.jpg" alt="University of Padua" width="400"><br><br>
+					<img src="/images/JSF.png" alt="Julian Schwinger Foundation" width="400"><br><br>
+					<img src="/images/pasquans.png" alt="PASQuanS" width="400">
+				</div>
+			</div>
+		</section>
+
+
+
+</div>
